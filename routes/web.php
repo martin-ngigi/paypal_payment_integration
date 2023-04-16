@@ -22,7 +22,7 @@ Route::get('/', function () {
 
 
 // Route::get('paywithpaypal', array('as' => 'paywithpaypal','uses' => 'PaypalController@payWithPaypal',));
-Route::get('paywithpaypal', [PaypalController::class, 'payWithPaypal']);
+Route::get('paywithpaypal', [PaypalController::class, 'payWithPaypal'])->name('paywithpaypal');
 
 // Route::post('paypal', array('as' => 'paypal','uses' => 'PaypalController@postPaymentWithpaypal',));
 // Route::get('paypal', array('as' => 'status','uses' => 'PaypalController@getPaymentStatus',));
